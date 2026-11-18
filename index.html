@@ -13,7 +13,7 @@
 
       <img src="img/logo.png" alt="logo da Royal barber" style="width: 150px" />
 
-      <nav id="menu-de-navegação">
+      <nav id="menu-de-navegação" aria-label="Menu principal">
         <a href="#inicio" style="font-size: 20px">Início</a>
         <a href="#Sobre" style="font-size: 20px">Sobre</a>
         <a href="#Serviços" style="font-size: 20px">Serviços</a>
@@ -100,7 +100,7 @@
         </video>
       </section>
       <aside>
-        <h3>Horário de funcionamento</h3>
+        <h2>Horário de funcionamento</h2>
         <table border="1">
           <tr>
             <th>Dias</th>
@@ -139,11 +139,11 @@
 
       <form>
         <label for="name">Nome:</label>
-        <input type="text" id="name" name="name" /><br />
+        <input type="text" id="name" name="name" required /><br />
         <label for="email">Email:</label>
-        <input type="email" id="email" name="email" /><br />
+        <input type="email" id="email" name="email" required /><br />
         <label for="appointment-date">Data do agendamento:</label>
-        <select id="appointment-date" name="mes">
+        <select id="appointment-date" name="mes" required>
           <option value="" disabled selected>selecione....</option>
           <option value="Dezembro">Dezembro</option>
           <option value="Janeiro">Janeiro</option>
@@ -159,7 +159,7 @@
           <option value="Novembro">Novembro</option>
         </select>
         <label for="dia">Escolha o dia:</label>
-        <select id="dia" name="dia">
+        <select id="dia" name="dia" required>
           <option value="" disabled selected>Selecione o dia....</option>
           <option value="Segunda-feira">Segunda-feira</option>
           <option value="Terça-feira">Terça-feira</option>
@@ -170,10 +170,33 @@
         </select>
         <br />
         <label for="message">Mensagem:</label>
-        <textarea id="message" name="message" rows="5" cols="40"></textarea
-        ><br />
+        <textarea id="message" name="message" rows="5" cols="40"></textarea>
+        <br />
         <button type="submit">Enviar</button>
       </form>
     </main>
+    <br />
+    <hr />
+
+    <footer id="Contactos">
+      <h2>Contactos</h2>
+
+      <p>Morada: Rua de Santa Catarina, Porto</p>
+      <p>Telefone: +351 912 345 678</p>
+      <p>Email: royalbarber@email.com</p>
+      <nav id="Links-de-redes-sociais" aria-label="Redes sociais">
+        <a href="https://www.instagram.com/royalbarber/" target="_blank"
+          >Instagram</a
+        >
+        <a href="https://www.facebook.com/royalbarber/" target="_blank"
+          >Facebook</a
+        >
+        <a href="https://www.twitter.com/royalbarber/" target="_blank"
+          >Twitter</a
+        >
+      </nav>
+
+      <p>&copy; Royal Barber. todos os direitos reservados.</p>
+    </footer>
   </body>
 </html>
