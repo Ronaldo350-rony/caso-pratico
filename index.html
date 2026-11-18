@@ -94,8 +94,9 @@
       </article>
       <section id="conheca-o-nosso-trabalho">
         <h2>Conheça o nosso trabalho</h2>
-        <video width="620" height="360" controls loop autoplay muted> 
-          <source src="videos/corte-de-cabelo.mp4" type="video/mp4"> Seu navegador não suporta o elemento de vídeo.
+        <video width="620" height="360" controls loop autoplay muted>
+          <source src="videos/corte-de-cabelo.mp4" type="video/mp4" />
+          Seu navegador não suporta o elemento de vídeo.
         </video>
       </section>
       <aside>
@@ -135,6 +136,44 @@
           </tr>
         </table>
       </aside>
+
+      <form>
+        <label for="name">Nome:</label>
+        <input type="text" id="name" name="name" /><br />
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" /><br />
+        <label for="appointment-date">Data do agendamento:</label>
+        <select id="appointment-date" name="mes">
+          <option value="" disabled selected>selecione....</option>
+          <option value="Dezembro">Dezembro</option>
+          <option value="Janeiro">Janeiro</option>
+          <option value="Fevereiro">Fevereiro</option>
+          <option value="Março">Março</option>
+          <option value="Abril">Abril</option>
+          <option value="Maio">Maio</option>
+          <option value="Junho">Junho</option>
+          <option value="Julho">Julho</option>
+          <option value="Agosto">Agosto</option>
+          <option value="Setembro">Setembro</option>
+          <option value="Outubro">Outubro</option>
+          <option value="Novembro">Novembro</option>
+        </select>
+        <label for="dia">Escolha o dia:</label>
+        <select id="dia" name="dia">
+          <option value="" disabled selected>Selecione o dia....</option>
+          <option value="Segunda-feira">Segunda-feira</option>
+          <option value="Terça-feira">Terça-feira</option>
+          <option value="Quarta-feira">Quarta-feira</option>
+          <option value="Quinta-feira">Quinta-feira</option>
+          <option value="Sexta-feira">Sexta-feira</option>
+          <option value="Sábado">Sábado</option>
+        </select>
+        <br />
+        <label for="message">Mensagem:</label>
+        <textarea id="message" name="message" rows="5" cols="40"></textarea
+        ><br />
+        <button type="submit">Enviar</button>
+      </form>
     </main>
   </body>
 </html>
